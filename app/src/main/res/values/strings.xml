@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fish Center</string>
+    <string name="out_flow">Out Flow</string>
+    <string name="in_flow">In Flow</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@mipmap/logo"
+                android:layout_marginTop="120dp">
+
+            </ImageView>
+
+
+
+
+            <LinearLayout android:id="@+id/menu_ll"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:layout_gravity="center"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/spinner_product"
+                            android:hint="Password"
+                            style="@android:style/Widget.Material.Spinner.Underlined"
+                            android:singleLine="true"
+                            android:textColorHint="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:backgroundTint="@color/lightGrey"
+                            android:padding="20dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+
+                            android:inputType="textPassword"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/orange_button">
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:drawableRight="@mipmap/right_arrow"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@android:color/white"
+                        android:textColor="@android:color/white"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_forget_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_submit">
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_new_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/rl_submit">
+                    <TextView
+                        android:id="@+id/tv_new"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New User ?"/>
+                    <TextView
+                        android:id="@+id/tv_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register Now"
+
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_new"
+                        android:textSize="16dp"/>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

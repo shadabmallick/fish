@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="10dp">
+
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_below="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:text="KATLA FISH"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_top"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tray No"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Piece"
+                        android:textColor="@android:color/black"
+
+                        android:layout_weight="1">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="@android:color/black"
+
+                        android:layout_weight="1">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/ll_top">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerVIew"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:text="RUHI FISH"></TextView>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt_second"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tray No"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Piece"
+                        android:textColor="@android:color/black"
+
+                        android:layout_weight="1">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="@android:color/black"
+
+                        android:layout_weight="1">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_recycler1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/ll_top">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerVIew1"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_change_product"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/orange_button">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RETURN"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:drawableTint="@color/lightOrange"
+
+                android:textColor="@android:color/white"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_next1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:background="@drawable/curve_green">
+
+            <TextView
+                android:id="@+id/tv_login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/lightOrange"
+                android:textSize="16dp"
+                android:padding="10dp"
+
+
+                android:textColor="@android:color/white"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
